@@ -32,10 +32,10 @@
     <img id="loading-logo" src="images/loading_logo.gif" alt="Loading...">
     <script>
         // Simulating website loading process
-        window.addEventListener('load', function () {
+        window.onload = function () {
             document.body.classList.remove('loading-page');
             document.body.classList.add('loaded-page');
-        });
+        };
     </script>
 
     <div class="loaded-page">
