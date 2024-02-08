@@ -3,67 +3,119 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Loading...</title>
+    <title>OSCORP</title>
     <style>
-        body.loading-page {
+        body {
             margin: 0;
             padding: 0;
             font-family: Arial, sans-serif;
             background-color: #000000;
             color: #ffffff;
             display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        
+        #logo {
+            text-align: center;
+            margin-top: 20px;
         }
 
-        #loading-logo {
-            max-width: 200px; /* Adjust the size as needed */
-            width: 100%;
+        #logo img {
+            max-width: 100%;
             height: auto;
         }
 
-        body.loaded-page {
-            display: none;
+        #slogan {
+            text-align: center;
+            background-color: #000000;
+            padding: 10px 0;
+        }
+        
+        #slogan p {
+            color: #ffffff;
+            font-size: 20px;
+        }
+        
+        #box {
+            margin: 20px auto;
+            max-width: 90%;
+            background-color: #000000;
+            padding: 20px;
+            border: 2px solid;
+            border-image: linear-gradient(to right, #00ff00, #00ffff);
+            border-image-slice: 1;
+        }
+        
+        #footer {
+            text-align: center;
+            background-color: #000000;
+            padding: 10px 0;
+            margin-top: auto;
+        }
+
+        #footer-line {
+            background-image: linear-gradient(to right, #00ff00, #00ffff);
+            height: 2px;
+            width: 100%;
+            margin-bottom: 10px;
+        }
+
+        #footer p {
+            color: #ffffff;
+        }
+
+        #team {
+            text-align: center;
+            margin-top: 20px;
+            padding-bottom: 20px;
+        }
+
+        #team-title {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        .team-member {
+            display: inline-block;
+            margin: 0 20px;
+        }
+
+        .team-member img {
+            max-width: 200px;
+            height: auto;
+        }
+
+        .team-member p {
+            color: #ffffff;
+            margin-top: 10px;
         }
     </style>
 </head>
-<body class="loading-page">
-    <img id="loading-logo" src="images/loading_logo.gif" alt="Loading...">
-    <script>
-        // Simulating website loading process
-        window.onload = function () {
-            document.body.classList.remove('loading-page');
-            document.body.classList.add('loaded-page');
-        };
-    </script>
-
-    <div class="loaded-page">
-        <!-- Actual website content goes here -->
-        <div id="logo">
-            <img src="images/oscorp.png" alt="OSCORP Logo">
+<body>
+    <div id="logo">
+        <img src="images/oscorp.png" alt="OSCORP Logo">
+    </div>
+    <div id="slogan">
+        <p>Innovating Tomorrow, Today.</p>
+    </div>
+    <div id="box">
+        <p>Oscorp is a cutting-edge technology and research corporation dedicated to pushing the boundaries of science and engineering. Specializing in advanced materials, biotechnology, and sustainable energy solutions, Oscorp is committed to shaping a brighter future for humanity through innovation and discovery. With a focus on groundbreaking research and development, Oscorp strives to tackle the world's most pressing challenges while inspiring the next generation of scientific pioneers.</p>
+    </div>
+    <div id="team">
+        <h2 id="team-title">Team</h2>
+        <div class="team-member">
+            <img src="images/norman.webp" alt="Norman Osborn">
+            <p>Norman Osborn<br>CEO & Founder</p>
         </div>
-        <div id="slogan">
-            <p>Innovating Tomorrow, Today.</p>
+        <div class="team-member">
+            <img src="images/otto.webp" alt="Otto Octavius">
+            <p>Otto Octavius<br>Chief Scientist</p>
         </div>
-        <div id="box">
-            <p>Oscorp is a cutting-edge technology and research corporation dedicated to pushing the boundaries of science and engineering. Specializing in advanced materials, biotechnology, and sustainable energy solutions, Oscorp is committed to shaping a brighter future for humanity through innovation and discovery. With a focus on groundbreaking research and development, Oscorp strives to tackle the world's most pressing challenges while inspiring the next generation of scientific pioneers.</p>
-        </div>
-        <div id="team">
-            <h2 id="team-title">Team</h2>
-            <div class="team-member">
-                <img src="images/norman.webp" alt="Norman Osborn">
-                <p>Norman Osborn<br>CEO & Founder</p>
-            </div>
-            <div class="team-member">
-                <img src="images/otto.webp" alt="Otto Octavius">
-                <p>Otto Octavius<br>Chief Scientist</p>
-            </div>
-        </div>
-        <div id="footer-line"></div>
-        <div id="footer">
-            <p>OSCORP 2024</p>
-        </div>
+    </div>
+    <div id="footer-line"></div>
+    <div id="footer">
+        <p>OSCORP 2024</p>
     </div>
 </body>
 </html>
