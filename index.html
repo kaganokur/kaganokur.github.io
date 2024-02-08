@@ -36,6 +36,12 @@
             background-clip: text;
         }
 
+        /* Add gradient line below menu */
+        #menu-line {
+            height: 2px;
+            background-image: linear-gradient(to right, #00ff00, #00ffff);
+        }
+
         /* Hide all subpages by default */
         .subpage {
             display: none;
@@ -129,6 +135,8 @@
         <a href="#projects">Projects</a>
         <a href="#investor-relations">Investor Relations</a>
     </div>
+    <!-- Add gradient line below menu -->
+    <div id="menu-line"></div>
 
     <!-- Home Subpage -->
     <div id="home" class="subpage">
