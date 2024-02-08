@@ -67,6 +67,13 @@
             border-image: linear-gradient(to right, #00ff00, #00ffff);
             border-image-slice: 1;
         }
+
+        #box img {
+            display: block;
+            margin: 20px auto; /* Add spacing */
+            max-width: 100%;
+            height: auto;
+        }
         
         #footer {
             text-align: center;
@@ -124,6 +131,14 @@
             #logo img {
                 margin: 0; /* Reset margin for logo */
             }
+
+            #box {
+                padding: 10px;
+            }
+
+            #box p {
+                font-size: 16px;
+            }
         }
     </style>
 </head>
@@ -145,8 +160,11 @@
     <div id="box">
         <p>Oscorp is a cutting-edge technology and research corporation dedicated to pushing the boundaries of science and engineering. Specializing in advanced materials, biotechnology, and sustainable energy solutions, Oscorp is committed to shaping a brighter future for humanity through innovation and discovery. With a focus on groundbreaking research and development, Oscorp strives to tackle the world's most pressing challenges while inspiring the next generation of scientific pioneers.</p>
     </div>
+    <!-- Add image with spacing -->
+    <img src="images/oscorpsite.webp" alt="OSCORP Site" id="oscorp-site-image">
     <div id="footer">
         <p>OSCORP 2024</p>
     </div>
 </body>
 </html>
+
