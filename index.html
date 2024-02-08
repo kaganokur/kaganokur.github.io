@@ -61,14 +61,25 @@
             color: #ffffff;
         }
 
-        @media only screen and (min-width: 600px) {
-            #logo {
-                margin-top: 50px;
-            }
+        #team {
+            text-align: center;
+            margin-top: 20px;
+            padding-bottom: 20px;
+        }
 
-            #slogan p {
-                font-size: 24px;
-            }
+        .team-member {
+            display: inline-block;
+            margin: 0 20px;
+        }
+
+        .team-member img {
+            max-width: 200px;
+            height: auto;
+        }
+
+        .team-member p {
+            color: #ffffff;
+            margin-top: 10px;
         }
     </style>
 </head>
@@ -85,6 +96,16 @@
     <div id="footer-line"></div>
     <div id="footer">
         <p>OSCORP 2024</p>
+    </div>
+    <div id="team">
+        <div class="team-member">
+            <img src="images/norman.webp" alt="Norman Osborn">
+            <p>Norman Osborn<br>CEO & Founder</p>
+        </div>
+        <div class="team-member">
+            <img src="images/otto.webp" alt="Otto Octavius">
+            <p>Otto Octavius<br>Chief Scientist</p>
+        </div>
     </div>
 </body>
 </html>
