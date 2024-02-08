@@ -36,6 +36,16 @@
             background-clip: text;
         }
 
+        /* Hide all subpages by default */
+        .subpage {
+            display: none;
+        }
+
+        /* Show active subpage */
+        :target {
+            display: block;
+        }
+
         #logo {
             text-align: center;
             margin-top: 20px;
@@ -114,22 +124,28 @@
 </head>
 <body>
     <div id="menu">
-        <a href="#">Home</a>
-        <a href="/team">Team</a>
-        <a href="/projects">Projects</a>
-        <a href="/investor-relations">Investor Relations</a>
+        <a href="#home">Home</a>
+        <a href="#team">Team</a>
+        <a href="#projects">Projects</a>
+        <a href="#investor-relations">Investor Relations</a>
     </div>
-    <div id="logo">
-        <img src="images/oscorp.png" alt="OSCORP Logo">
+
+    <!-- Home Subpage -->
+    <div id="home" class="subpage">
+        <div id="logo">
+            <img src="images/oscorp.png" alt="OSCORP Logo">
+        </div>
+        <div id="slogan">
+            <p>Innovating Tomorrow, Today.</p>
+        </div>
+        <div id="box">
+            <p>Oscorp is a cutting-edge technology and research corporation dedicated to pushing the boundaries of science and engineering. Specializing in advanced materials, biotechnology, and sustainable energy solutions, Oscorp is committed to shaping a brighter future for humanity through innovation and discovery. With a focus on groundbreaking research and development, Oscorp strives to tackle the world's most pressing challenges while inspiring the next generation of scientific pioneers.</p>
+        </div>
     </div>
-    <div id="slogan">
-        <p>Innovating Tomorrow, Today.</p>
-    </div>
-    <div id="box">
-        <p>Oscorp is a cutting-edge technology and research corporation dedicated to pushing the boundaries of science and engineering. Specializing in advanced materials, biotechnology, and sustainable energy solutions, Oscorp is committed to shaping a brighter future for humanity through innovation and discovery. With a focus on groundbreaking research and development, Oscorp strives to tackle the world's most pressing challenges while inspiring the next generation of scientific pioneers.</p>
-    </div>
-    <div id="team">
-        <h2 id="team-title">Team</h2>
+
+    <!-- Team Subpage -->
+    <div id="team" class="subpage">
+        <div id="team-title">Team</div>
         <div class="team-member">
             <img src="images/norman.webp" alt="Norman Osborn">
             <p>Norman Osborn<br>CEO & Founder</p>
@@ -139,9 +155,23 @@
             <p>Otto Octavius<br>Chief Scientist</p>
         </div>
     </div>
+
+    <!-- Projects Subpage -->
+    <div id="projects" class="subpage">
+        <div id="projects-title">Projects</div>
+        <!-- Add project content here -->
+    </div>
+
+    <!-- Investor Relations Subpage -->
+    <div id="investor-relations" class="subpage">
+        <div id="investor-relations-title">Investor Relations</div>
+        <!-- Add investor relations content here -->
+    </div>
+
     <div id="footer-line"></div>
     <div id="footer">
         <p>OSCORP 2024</p>
     </div>
+
 </body>
 </html>
