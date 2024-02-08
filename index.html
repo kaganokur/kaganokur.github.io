@@ -120,37 +120,24 @@
             }
 
             #menu-links {
-                display: none; /* Hide the links on mobile */
                 margin-top: 20px;
             }
 
-            #menu-button {
-                display: block; /* Show the menu button on mobile */
-                padding: 10px;
-                background-color: #000000;
-                color: #ffffff;
-                border: none;
-                cursor: pointer;
-            }
-
-            #menu-dropdown {
-                display: none; /* Initially hide the dropdown menu */
-                width: 100%;
-                background-color: #000000;
-                padding: 10px 0;
-                text-align: center;
-            }
-
-            #menu-dropdown a {
+            #menu a {
                 display: block;
-                padding: 10px;
-                color: #ffffff;
-                text-decoration: none;
-                transition: background-color 0.3s;
+                margin-bottom: 10px;
             }
 
-            #menu-dropdown a:hover {
-                background-color: #00ff00;
+            #logo img {
+                margin: 0; /* Reset margin for logo */
+            }
+
+            #box {
+                padding: 10px;
+            }
+
+            #box p {
+                font-size: 16px;
             }
         }
     </style>
@@ -166,15 +153,6 @@
             <a href="/projects">Projects</a>
             <a href="/investor-relations">Investor Relations</a>
         </div>
-        <!-- Menu button for mobile -->
-        <button id="menu-button">Menu</button>
-    </div>
-    <!-- Dropdown menu for mobile -->
-    <div id="menu-dropdown">
-        <a href="#">Home</a>
-        <a href="/team">Team</a>
-        <a href="/projects">Projects</a>
-        <a href="/investor-relations">Investor Relations</a>
     </div>
     <div id="slogan">
         <p>Innovating Tomorrow, Today.</p>
@@ -187,17 +165,6 @@
     <div id="footer">
         <p>OSCORP 2024</p>
     </div>
-
-    <!-- Script for toggling the dropdown menu on mobile -->
-    <script>
-        document.getElementById("menu-button").addEventListener("click", function() {
-            var menuDropdown = document.getElementById("menu-dropdown");
-            if (menuDropdown.style.display === "block") {
-                menuDropdown.style.display = "none";
-            } else {
-                menuDropdown.style.display = "block";
-            }
-        });
-    </script>
 </body>
 </html>
+
