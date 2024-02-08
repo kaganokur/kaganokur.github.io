@@ -5,132 +5,86 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>OSCORP</title>
     <style>
+        /* Styles for the main page */
         body {
+            font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            font-family: Arial, sans-serif;
-            background-color: #000000;
-            color: #ffffff;
-            display: flex;
-            flex-direction: column;
-            min-height: 100vh;
         }
-        
-        #menu {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            background-color: #000000;
+        header {
+            background-color: #000;
+            color: #fff;
             padding: 10px 20px;
         }
-
-        #menu a {
-            color: #ffffff;
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+        nav ul li a {
+            color: #fff;
             text-decoration: none;
-            padding: 10px 20px;
-            transition: color 0.3s;
         }
-
-        #menu a:hover {
-            color: transparent;
-            background-image: linear-gradient(to right, #00ff00, #00ffff);
-            -webkit-background-clip: text;
-            background-clip: text;
+        nav ul li a:hover {
+            color: #0f0;
         }
-
-        #logo img {
-            max-width: 100%;
-            height: auto;
-            margin-left: 20px; /* Add margin to the left for spacing */
-        }
-
-        #slogan {
-            text-align: center;
-            background-color: #000000;
-            padding: 10px 0;
-        }
-        
-        #slogan p {
-            color: #ffffff;
-            font-size: 20px;
-        }
-        
-        #box {
-            margin: 20px auto;
-            max-width: 90%;
-            background-color: #000000;
+        #main-content {
             padding: 20px;
-            border: 2px solid;
-            border-image: linear-gradient(to right, #00ff00, #00ffff);
-            border-image-slice: 1;
         }
-        
-        #footer {
-            text-align: center;
-            background-color: #000000;
-            padding: 10px 0;
-            margin-top: auto;
-        }
-
-        #footer-line {
-            background-image: linear-gradient(to right, #00ff00, #00ffff);
-            height: 2px;
+        footer {
+            background-color: #000;
+            color: #fff;
+            padding: 10px 20px;
+            position: fixed;
+            bottom: 0;
             width: 100%;
-            margin-bottom: 10px;
-        }
-
-        #footer p {
-            color: #ffffff;
-        }
-
-        #team {
             text-align: center;
-            margin-top: 20px;
-            padding-bottom: 20px;
-        }
-
-        #team-title {
-            font-size: 24px;
-            margin-bottom: 20px;
-        }
-
-        .team-member {
-            display: inline-block;
-            margin: 0 20px;
-        }
-
-        .team-member img {
-            max-width: 200px;
-            height: auto;
-        }
-
-        .team-member p {
-            color: #ffffff;
-            margin-top: 10px;
         }
     </style>
 </head>
 <body>
-    <div id="menu">
-        <div id="logo">
-            <img src="images/oscorp.png" alt="OSCORP Logo">
-        </div>
-        <div id="menu-links">
-            <a href="#">Home</a>
-            <a href="/team">Team</a>
-            <a href="/projects">Projects</a>
-            <a href="/investor-relations">Investor Relations</a>
-        </div>
-    </div>
-    <div id="slogan">
-        <p>Innovating Tomorrow, Today.</p>
-    </div>
-    <div id="box">
+    <!-- Header with menu -->
+    <header>
+        <!-- Menu with links -->
+        <nav>
+            <ul>
+                <li><a href="#" onclick="loadPage('home')">Home</a></li>
+                <li><a href="#" onclick="loadPage('team')">Team</a></li>
+                <li><a href="#" onclick="loadPage('projects')">Projects</a></li>
+                <li><a href="#" onclick="loadPage('investor-relations')">Investor Relations</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <!-- Main content container -->
+    <div id="main-content">
+        <h1>Welcome to OSCORP!</h1>
         <p>Oscorp is a cutting-edge technology and research corporation dedicated to pushing the boundaries of science and engineering. Specializing in advanced materials, biotechnology, and sustainable energy solutions, Oscorp is committed to shaping a brighter future for humanity through innovation and discovery. With a focus on groundbreaking research and development, Oscorp strives to tackle the world's most pressing challenges while inspiring the next generation of scientific pioneers.</p>
+        <p>Please explore our menu to learn more about us.</p>
     </div>
-    <div id="footer-line"></div>
-    <div id="footer">
+    
+    <!-- Footer -->
+    <footer>
         <p>OSCORP 2024</p>
-    </div>
+    </footer>
+
+    <!-- JavaScript to load pages dynamically -->
+    <script>
+        function loadPage(pageName) {
+            var xhttp = new XMLHttpRequest();
+            xhttp.onreadystatechange = function() {
+                if (this.readyState == 4 && this.status == 200) {
+                    document.getElementById("main-content").innerHTML = this.responseText;
+                }
+            };
+            xhttp.open("GET", pageName + ".html", true);
+            xhttp.send();
+        }
+    </script>
 </body>
 </html>
+
