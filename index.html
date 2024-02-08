@@ -3,146 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Stalios</title>
+    <title>OSCORP</title>
     <style>
         body {
-            background-color: #000;
-            color: #fff;
-            font-family: 'Poetsen', sans-serif;
             margin: 0;
             padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
         }
-
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 20px;
-            text-align: center; /* Center align the container */
-        }
-
-        nav {
+        
+        #header {
             text-align: center;
-            position: relative; /* Make the nav container relative */
+            padding: 20px 0;
+            background-color: #ffffff;
         }
-
-        .logo {
-            position: absolute; /* Position the logo absolutely within the nav container */
-            top: 0; /* Align the logo to the top of the nav container */
-            left: 0; /* Align the logo to the left of the nav container */
-            width: 100px; /* Set the width of the logo */
-            height: auto; /* Preserve aspect ratio */
+        
+        #header img {
+            max-width: 100%;
+            height: auto;
         }
-
-        nav ul {
-            list-style-type: none;
-            padding: 0;
-            margin: 0;
-        }
-
-        nav ul li {
-            display: inline;
-            margin-right: 20px;
-        }
-
-        nav ul li a {
-            color: #fff; /* White */
-            text-decoration: none;
-            transition: color 0.3s;
-        }
-
-        nav ul li a:hover {
-            color: #F7931A; /* Orange */
-        }
-
-        h1 {
-            text-align: center;
-            font-size: 36px;
-            margin-bottom: 20px;
-            color: #F7931A; /* Orange */
-        }
-
-        h2 {
-            font-size: 24px;
+        
+        #title {
+            color: green;
+            font-size: 48px;
             margin-top: 20px;
-            margin-bottom: 20px;
-            color: #fff; /* White */
         }
-
-        .box {
-            background-color: #000;
-            color: #fff;
+        
+        #content {
+            margin: 50px auto;
+            max-width: 800px;
             padding: 20px;
-            margin: 0 auto; /* Center the box horizontally */
-            margin-bottom: 20px; /* Reduced margin */
-            border: 2px solid;
-            border-image: linear-gradient(to right, #F7931A, #FF0000);
-            border-image-slice: 1;
-            width: 50%; /* Set the width to 50% */
-        }
-
-        .box p {
-            margin: 0;
-        }
-
-        .icons {
+            background: linear-gradient(to bottom right, #00ff00, #33ff33);
+            border: 2px solid #00ff00;
+            border-radius: 10px;
             text-align: center;
+            color: #ffffff;
         }
-
-        .icon a {
-            color: #fff; /* White */
-            text-decoration: none;
-            transition: color 0.3s;
-        }
-
-        .icon a:hover {
-            color: #F7931A; /* Orange */
-        }
-
-        .icon {
-            display: inline-block;
-            margin: 0 20px;
-        }
-
-        footer {
+        
+        #footer {
             text-align: center;
-            padding: 20px;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
+            background-color: #ffffff;
+            padding: 20px 0;
         }
     </style>
 </head>
 <body>
-
-<div class="container">
-    <nav>
-        <img src="images/stalioslogo.png" alt="Stalios Logo" class="logo"> <!-- Logo added here -->
-        <ul>
-            <li><a href="#">Staking</a></li>
-            <li><a href="#">Lock</a></li>
-            <li><a href="#">Dashboard</a></li>
-            <li><a href="#">Play</a></li>
-        </ul>
-    </nav>
-
-    <h1>STALIOS</h1>
-
-    <div class="box">
-        <p>Welcome to Stalios! Stalios is a Decentralized Revenue Sharing Protocol that aims to allow investors to earn ETH yield through staking STA. Native token of the Stalios Protocol is STA, with STA users can participate in governance, revenue sharing and purchasing NFTs.</p>
+    <div id="header">
+        <img src="oscorp.png" alt="OSCORP Logo">
+        <h1 id="title">OSCORP</h1>
     </div>
-
-    <h2>Join Our Community!</h2>
-
-    <div class="icons">
-        <a href="#"><img src="images/twitter.png" alt="Twitter" class="icon"></a>
-        <a href="#"><img src="images/discord.png" alt="Discord" class="icon"></a>
-        <a href="#"><img src="images/telegram.png" alt="Telegram" class="icon"></a>
+    <div id="content">
+        <p>Oscorp is a cutting-edge technology and research corporation dedicated to pushing the boundaries of science and engineering. Specializing in advanced materials, biotechnology, and sustainable energy solutions, Oscorp is committed to shaping a brighter future for humanity through innovation and discovery. With a focus on groundbreaking research and development, Oscorp strives to tackle the world's most pressing challenges while inspiring the next generation of scientific pioneers.</p>
     </div>
-</div>
-
-<footer>
-    <p>Stalios 2024</p>
-</footer>
-
+    <div id="footer">
+        <p>OSCORP All Rights Reserved</p>
+    </div>
 </body>
 </html>
