@@ -1,23 +1,145 @@
-<h1>Our Team</h1>
-<p>Norman Osborn - The Founder and CEO of Oscorp
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OSCORP Team</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #000000;
+            color: #ffffff;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        
+        #menu {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #000000;
+            padding: 10px 20px;
+        }
 
-Arthur Stacy - The Chief of Security at Oscorp
+        #menu a {
+            color: #ffffff;
+            text-decoration: none;
+            padding: 10px 20px;
+            transition: color 0.3s;
+        }
 
-Charles Standish - The Senior Vice-President of Oscorp
+        #menu a:hover {
+            color: transparent;
+            background-image: linear-gradient(to right, #00ff00, #00ffff);
+            -webkit-background-clip: text;
+            background-clip: text;
+        }
 
-Donald Menken - The personal assistant of Norman Osborn
+        #logo img {
+            max-width: 100%;
+            height: auto;
+            margin-left: 20px; /* Add margin to the left for spacing */
+        }
 
-Mendel Stromm - Lead Scientist
+        #team-container {
+            text-align: center;
+            margin: 20px;
+        }
 
-Dr. David Patrick Lowell - Scientist
+        #team-container h1 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
 
-Dr. Malek - Scientist
+        #team-container p {
+            font-size: 16px;
+            line-height: 1.5;
+        }
 
-Dr. Nels van Adder - Research Scientist
+        /* Footer styles */
+        #footer {
+            text-align: center;
+            background-color: #000000;
+            padding: 10px 0;
+            margin-top: auto;
+            color: #ffffff;
+        }
 
-Dr. David Lowell - Scientist, Head of Photogenesis Project
+        #footer p {
+            margin: 0;
+        }
 
-Harry Osborn - Shareholder
+        /* Mobile responsiveness */
+        @media only screen and (max-width: 600px) {
+            #menu {
+                flex-direction: column;
+                align-items: center;
+            }
 
-Mark Raxton - Head of Security
-</p>
+            #menu-links {
+                margin-top: 20px;
+            }
+
+            #menu a {
+                display: block;
+                margin-bottom: 10px;
+            }
+
+            #logo img {
+                margin: 0; /* Reset margin for logo */
+            }
+
+            #team-container {
+                padding: 10px;
+            }
+
+            #team-container h1 {
+                font-size: 20px;
+            }
+
+            #team-container p {
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="menu">
+        <div id="logo">
+            <img src="images/oscorp.png" alt="OSCORP Logo">
+        </div>
+        <div id="menu-links">
+            <a href="/">Home</a>
+            <a href="/team">Team</a>
+            <a href="/projects">Projects</a>
+            <a href="/investor-relations">Investor Relations</a>
+        </div>
+    </div>
+
+    <div id="team-container">
+        <h1>Our Team</h1>
+        <p>
+            Norman Osborn - The Founder and CEO of Oscorp<br>
+            Arthur Stacy - The Chief of Security at Oscorp<br>
+            Charles Standish - The Senior Vice-President of Oscorp<br>
+            Donald Menken - The personal assistant of Norman Osborn<br>
+            Mendel Stromm - Lead Scientist<br>
+            Dr. David Patrick Lowell - Scientist<br>
+            Dr. Malek - Scientist<br>
+            Dr. Nels van Adder - Research Scientist<br>
+            Dr. David Lowell - Scientist, Head of Photogenesis Project<br>
+            Harry Osborn - Shareholder<br>
+            Mark Raxton - Head of Security
+        </p>
+    </div>
+
+    <!-- Footer -->
+    <div id="footer">
+        <p>OSCORP 2024</p>
+    </div>
+
+</body>
+</html>
