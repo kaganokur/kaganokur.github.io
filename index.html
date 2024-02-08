@@ -17,9 +17,11 @@
         }
         
         #menu {
-            text-align: center;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
             background-color: #000000;
-            padding: 10px 0;
+            padding: 10px 20px;
         }
 
         #menu a {
@@ -36,14 +38,10 @@
             background-clip: text;
         }
 
-        #logo {
-            text-align: center;
-            margin-top: 20px;
-        }
-
         #logo img {
             max-width: 100%;
             height: auto;
+            margin-left: 20px; /* Add margin to the left for spacing */
         }
 
         #slogan {
@@ -114,13 +112,15 @@
 </head>
 <body>
     <div id="menu">
-        <a href="#">Home</a>
-        <a href="/team">Team</a>
-        <a href="/projects">Projects</a>
-        <a href="/investor-relations">Investor Relations</a>
-    </div>
-    <div id="logo">
-        <img src="images/oscorp.png" alt="OSCORP Logo">
+        <div id="logo">
+            <img src="images/oscorp.png" alt="OSCORP Logo">
+        </div>
+        <div id="menu-links">
+            <a href="#">Home</a>
+            <a href="/team">Team</a>
+            <a href="/projects">Projects</a>
+            <a href="/investor-relations">Investor Relations</a>
+        </div>
     </div>
     <div id="slogan">
         <p>Innovating Tomorrow, Today.</p>
