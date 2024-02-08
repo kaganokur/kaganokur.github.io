@@ -10,53 +10,58 @@
             padding: 0;
             font-family: Arial, sans-serif;
             background-color: #000000;
+            color: #ffffff;
         }
         
-        #header {
+        #logo {
             text-align: center;
-            padding: 20px 0;
+            margin-top: 50px;
+        }
+        
+        #slogan {
+            text-align: center;
             background-color: #000000;
+            padding: 20px 0;
         }
         
-        #header img {
-            max-width: 100%;
-            height: auto;
+        #slogan p {
+            color: #ffffff;
+            font-size: 24px;
         }
         
-        #title {
-            color: green;
-            font-size: 48px;
-            margin-top: 20px;
-        }
-        
-        #content {
+        #box {
             margin: 50px auto;
             max-width: 800px;
+            background-color: #000000;
             padding: 20px;
-            background: linear-gradient(to bottom right, #000000, #000000);
-            border: 2px linear-gradient(to bottom right, #00ff00, #33ff33);
-            border-radius: 10px;
-            text-align: center;
-            color: #000000;
+            border: 2px solid;
+            border-image: linear-gradient(to right, #00ff00, #00ffff);
+            border-image-slice: 1;
         }
         
         #footer {
             text-align: center;
-            background-color: #000000;
-            padding: 20px 0;
+            background-image: linear-gradient(to right, #00ff00, #00ffff);
+            padding: 10px 0;
+        }
+        
+        #footer p {
+            color: #ffffff;
         }
     </style>
 </head>
 <body>
-    <div id="header">
+    <div id="logo">
         <img src="images/oscorp.png" alt="OSCORP Logo">
-        <h1 id="title">OSCORP</h1>
     </div>
-    <div id="content">
+    <div id="slogan">
+        <p>Innovating Tomorrow, Today.</p>
+    </div>
+    <div id="box">
         <p>Oscorp is a cutting-edge technology and research corporation dedicated to pushing the boundaries of science and engineering. Specializing in advanced materials, biotechnology, and sustainable energy solutions, Oscorp is committed to shaping a brighter future for humanity through innovation and discovery. With a focus on groundbreaking research and development, Oscorp strives to tackle the world's most pressing challenges while inspiring the next generation of scientific pioneers.</p>
     </div>
     <div id="footer">
-        <p>OSCORP All Rights Reserved</p>
+        <p>OSCORP 2024</p>
     </div>
 </body>
 </html>
