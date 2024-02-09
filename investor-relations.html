@@ -16,6 +16,9 @@
         #menu {
             background-color: #000000;
             padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
         }
 
         #menu a {
@@ -30,6 +33,10 @@
             background-image: linear-gradient(to right, #00ff00, #00ffff);
             -webkit-background-clip: text;
             background-clip: text;
+        }
+
+        #logo img {
+            max-height: 30px;
         }
 
         .container {
@@ -73,10 +80,15 @@
 </head>
 <body>
     <div id="menu">
-        <a href="/">Home</a>
-        <a href="/team">Team</a>
-        <a href="/projects">Projects</a>
-        <a href="/investor-relations">Investor Relations</a>
+        <div id="logo">
+            <img src="images/oscorp.png" alt="OSCORP Logo">
+        </div>
+        <div id="menu-links">
+            <a href="/">Home</a>
+            <a href="/team">Team</a>
+            <a href="/projects">Projects</a>
+            <a href="/investor-relations">Investor Relations</a>
+        </div>
     </div>
 
     <div class="container">
