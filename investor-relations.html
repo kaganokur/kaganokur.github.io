@@ -44,19 +44,16 @@
             margin-left: 20px; /* Add margin to the left for spacing */
         }
 
-        .project-section {
-            display: flex;
+        .token-info {
             margin: 20px;
         }
 
-        .project-section img {
-            max-width: 200px;
-            height: 150px;
-            margin-right: 20px; /* Add margin to the right for spacing */
+        .token-info h3 {
+            margin-bottom: 10px;
         }
 
-        .project-section-content {
-            flex: 1;
+        .token-info p {
+            margin: 0;
         }
 
         /* Footer styles */
@@ -70,40 +67,6 @@
 
         #footer p {
             margin: 0;
-        }
-
-        /* Mobile responsiveness */
-        @media only screen and (max-width: 600px) {
-            #menu {
-                flex-direction: column;
-                align-items: center;
-            }
-
-            #menu-links {
-                margin-top: 20px;
-            }
-
-            #menu a {
-                display: block;
-                margin-bottom: 10px;
-            }
-
-            #logo img {
-                margin: 0; /* Reset margin for logo */
-            }
-
-            .project-section {
-                flex-direction: column;
-            }
-
-            .project-section img {
-                max-width: 100%;
-                margin: 0 auto 20px; /* Center image and add spacing below */
-            }
-
-            .project-section-content {
-                text-align: center;
-            }
         }
     </style>
 </head>
@@ -120,11 +83,43 @@
         </div>
     </div>
 
-    <!-- Add investor relations content here -->
+    <div class="token-info">
+        <h2>OSCORP Token Information</h2>
+        <p><strong>Token Name:</strong> Oscorp</p>
+        <p><strong>Token Symbol/Ticker:</strong> OSCORP</p>
+        <p><strong>Total Supply:</strong> 100,000,000</p>
+        <p><strong>Contract Address:</strong> contractaddress</p>
+    </div>
+
+    <div class="token-markets">
+        <h2>Markets</h2>
+        <p><strong>Decentralized Exchanges (DEX):</strong> Listed on Uniswap</p>
+        <p><strong>Centralized Exchanges (CEX):</strong> Planned listings on centralized exchanges</p>
+    </div>
+
+    <div class="tokenomics">
+        <h2>Tokenomics</h2>
+        <p><strong>Token Distribution:</strong> Details about token distribution</p>
+        <p><strong>Use of Proceeds:</strong> How funds raised will be utilized</p>
+    </div>
+
+    <div class="governance">
+        <h2>Governance and Voting Rights</h2>
+        <p>Explanation of governance features</p>
+    </div>
+
+    <div class="legal-compliance">
+        <h2>Legal and Compliance</h2>
+        <p>Information on legal status and compliance</p>
+    </div>
+
+    <div class="contact-info">
+        <h2>Contact Information</h2>
+        <p>Email: investor-relations@oscorp.com</p>
+    </div>
 
     <div id="footer">
         <p>&copy; 2024 OSCORP. All rights reserved.</p>
     </div>
 </body>
 </html>
-
