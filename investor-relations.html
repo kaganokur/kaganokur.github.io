@@ -11,14 +11,17 @@
             font-family: Arial, sans-serif;
             background-color: #000000;
             color: #ffffff;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
         }
-
+        
         #menu {
-            background-color: #000000;
-            padding: 10px 20px;
             display: flex;
             justify-content: space-between;
             align-items: center;
+            background-color: #000000;
+            padding: 10px 20px;
         }
 
         #menu a {
@@ -36,29 +39,71 @@
         }
 
         #logo img {
-            max-height: 50px;
+            max-width: 100%;
+            height: auto;
+            margin-left: 20px; /* Add margin to the left for spacing */
         }
 
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
+        .project-section {
+            display: flex;
+            margin: 20px;
         }
 
-        h1 {
-            text-align: center;
+        .project-section img {
+            max-width: 200px;
+            height: 150px;
+            margin-right: 20px; /* Add margin to the right for spacing */
         }
 
+        .project-section-content {
+            flex: 1;
+        }
+
+        /* Footer styles */
         #footer {
             text-align: center;
             background-color: #000000;
             padding: 10px 0;
-            margin-top: 50px; /* Adjust this margin if necessary */
+            margin-top: auto;
             color: #ffffff;
         }
 
         #footer p {
             margin: 0;
+        }
+
+        /* Mobile responsiveness */
+        @media only screen and (max-width: 600px) {
+            #menu {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            #menu-links {
+                margin-top: 20px;
+            }
+
+            #menu a {
+                display: block;
+                margin-bottom: 10px;
+            }
+
+            #logo img {
+                margin: 0; /* Reset margin for logo */
+            }
+
+            .project-section {
+                flex-direction: column;
+            }
+
+            .project-section img {
+                max-width: 100%;
+                margin: 0 auto 20px; /* Center image and add spacing below */
+            }
+
+            .project-section-content {
+                text-align: center;
+            }
         }
     </style>
 </head>
@@ -75,12 +120,11 @@
         </div>
     </div>
 
-    <div class="container">
-        <!-- Add your content here -->
-    </div>
+    <!-- Add investor relations content here -->
 
     <div id="footer">
         <p>&copy; 2024 OSCORP. All rights reserved.</p>
     </div>
 </body>
 </html>
+
