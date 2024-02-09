@@ -144,6 +144,18 @@
             #slogan {
                 margin-top: 10px; /* Adjust spacing for slogan on mobile */
             }
+
+            /* Hide the first contract address on mobile */
+            #menu-links .desktop-address {
+                display: none;
+            }
+        }
+
+        /* Show only the second contract address on mobile */
+        @media only screen and (max-width: 600px) {
+            .mobile-address {
+                display: inline-block;
+            }
         }
     </style>
 </head>
@@ -153,16 +165,15 @@
             <img src="images/oscorp.png" alt="OSCORP Logo">
         </div>
         <div id="menu-links">
-            <span>0xcontractaddress</span>
+            <!-- First contract address only visible on desktop -->
+            <span class="desktop-address">0xcontractaddress</span>
             <a href="#">Home</a>
             <a href="/team">Team</a>
             <a href="/projects">Projects</a>
             <a href="/investor-relations">Investor Relations</a>
+            <!-- Second contract address visible on mobile -->
+            <span class="mobile-address">0xcontractaddress</span>
         </div>
-    </div>
-    <!-- Add contract address here below the links -->
-    <div style="text-align: center; margin-top: 10px;">
-        <p>0xcontractaddress</p>
     </div>
     <!-- Add image with spacing -->
     <img src="images/oscorpsite.webp" alt="OSCORP Site" id="oscorp-site-image">
