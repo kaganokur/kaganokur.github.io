@@ -13,27 +13,17 @@
             margin: 0;
             padding: 0;
             text-align: center;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
         }
 
         header {
-            width: 100%;
+            padding: 20px; /* Add padding to the header */
             position: relative;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin-top: 20px;
-            padding: 20px 0; /* Added padding for spacing */
-        }
-
-        h1 {
-            display: none; /* Hide the title */
         }
 
         .logo-container {
-            margin-bottom: 20px; /* Added margin bottom for spacing */
+            margin-bottom: 20px; /* Add vertical spacing below the logo */
+            position: absolute;
+            top: 10px;
         }
 
         .logo-container img {
@@ -41,6 +31,7 @@
         }
 
         nav {
+            margin-bottom: 20px; /* Add vertical spacing below the navigation */
             flex: 1;
             text-align: center;
         }
@@ -142,8 +133,8 @@
                 <li><a href="/lock.html">Lock</a></li>
             </ul>
         </nav>
+        <button class="connect-button">Connect</button> <!-- Connect button -->
     </header>
-    <button class="connect-button">Connect</button> <!-- Connect button -->
     <div class="container-wrapper">
         <div class="container">
             <h2>BB-FTM LP</h2>
@@ -176,4 +167,3 @@
     </footer>
 </body>
 </html>
-
