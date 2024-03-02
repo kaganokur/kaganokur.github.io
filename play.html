@@ -53,6 +53,21 @@
         .logo-container img {
             max-width: 150px; /* Adjust the max-width as needed */
         }
+
+        /* Style for buttons */
+        .button {
+            background-image: linear-gradient(to right, blue, purple);
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .button:hover {
+            background-color: purple;
+        }
     </style>
 </head>
 <body>
@@ -60,9 +75,11 @@
         <h1>BlueBerry</h1>
         <nav>
             <ul>
-                <li><a href="/index.html">Home</a></li> <!-- Updated Home link -->
+                <li><a href="/index.html">Home</a></li>
                 <li><a href="/play.html">Play</a></li>
                 <li><a href="/dashboard.html">Dashboard</a></li>
+                <!-- Add Connect button -->
+                <li><button class="button">Connect</button></li>
             </ul>
         </nav>
         <div class="logo-container">
