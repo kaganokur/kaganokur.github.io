@@ -69,6 +69,8 @@
             padding: 20px;
             max-width: 80%;
             margin-bottom: 20px;
+            position: relative; /* Add position relative to allow z-index */
+            z-index: 1; /* Set z-index higher than the new container */
         }
 
         .container p {
@@ -114,10 +116,30 @@
             position: absolute;
             top: 10px;
             right: 10px;
+            z-index: 2; /* Ensure connect button is above other content */
         }
 
         .connect-button:hover {
             background-color: purple;
+        }
+
+        .top-container {
+            border: 2px solid transparent;
+            border-image: linear-gradient(to right, blue, purple);
+            border-image-slice: 1;
+            padding: 20px;
+            max-width: 80%;
+            margin-bottom: 20px;
+            position: relative; /* Add position relative to allow z-index */
+            z-index: 2; /* Set z-index higher than the other containers */
+        }
+
+        .top-container p {
+            margin: 10px 0;
+        }
+
+        .top-container h2 {
+            margin-bottom: 10px;
         }
     </style>
 </head>
@@ -136,6 +158,12 @@
             <li><a href="/lock.html">Lock</a></li>
         </ul>
     </nav>
+    <div class="top-container">
+        <h2>Total Locked $BB</h2>
+        <p>780230</p>
+        <h2>Total $xBB</h2>
+        <p>625789</p>
+    </div>
     <div class="container-wrapper">
         <div class="container">
             <h2>BB-FTM LP</h2>
