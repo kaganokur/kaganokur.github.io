@@ -62,7 +62,8 @@
             border-image: linear-gradient(to right, blue, purple);
             border-image-slice: 1;
             padding: 20px;
-            max-width: 200px;
+            max-width: 250px; /* Adjust container width */
+            text-align: center;
         }
 
         .container p {
@@ -83,30 +84,17 @@
             border-radius: 5px;
             cursor: pointer;
             transition: background-color 0.3s;
+            margin: 10px 5px; /* Adjust button margin */
+            width: 100px; /* Adjust button width */
         }
 
         .button:hover {
-            background-color: purple;
+            background-color: red;
         }
 
         footer {
             text-align: center;
             margin-top: 20px;
-        }
-
-        /* Add style for the Connect button */
-        .connect-button {
-            background-image: linear-gradient(to right, blue, purple);
-            color: white;
-            padding: 10px 20px;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            transition: background-color 0.3s;
-        }
-
-        .connect-button:hover {
-            background-color: purple;
         }
     </style>
 </head>
@@ -123,8 +111,6 @@
         <div class="logo-container">
             <img src="images/bblogo1.png" alt="BlueBerry Logo">
         </div>
-        <!-- Add Connect button -->
-        <button class="connect-button">Connect</button>
     </header>
     <div class="container-wrapper">
         <div class="container">
