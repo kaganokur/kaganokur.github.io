@@ -17,9 +17,10 @@
 
         header {
             display: flex;
-            flex-direction: column;
+            justify-content: space-between;
             align-items: center;
             margin-top: 20px;
+            padding: 0 20px; /* Added padding for spacing */
         }
 
         h1 {
@@ -80,7 +81,9 @@
             background-image: linear-gradient(to right, blue, purple);
             color: white;
             padding: 10px 20px;
-            border: none;
+            border: 2px solid transparent; /* Added border */
+            border-image: linear-gradient(to right, blue, purple); /* Added border image */
+            border-image-slice: 1;
             border-radius: 5px;
             cursor: pointer;
             transition: background-color 0.3s;
@@ -110,6 +113,7 @@
                 <li><a href="/lock.html">Lock</a></li>
             </ul>
         </nav>
+        <button class="button">Connect</button> <!-- Connect button -->
     </header>
     <div class="container-wrapper">
         <div class="container">
