@@ -16,6 +16,7 @@
         }
 
         header {
+            position: relative; /* Make the header relative */
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -28,7 +29,9 @@
         }
 
         .logo-container {
-            margin-top: 20px;
+            position: absolute; /* Position the logo absolutely */
+            top: 10px; /* Adjust top margin */
+            left: 10px; /* Adjust left margin */
         }
 
         .logo-container img {
@@ -98,6 +101,23 @@
             text-align: center;
             margin-top: 20px;
         }
+
+        .connect-button {
+            background-image: linear-gradient(to right, blue, purple);
+            color: white;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            position: absolute; /* Position the connect button absolutely */
+            top: 10px; /* Adjust top position */
+            right: 10px; /* Adjust right position */
+        }
+
+        .connect-button:hover {
+            background-color: purple;
+        }
     </style>
 </head>
 <body>
@@ -113,7 +133,7 @@
                 <li><a href="/lock.html">Lock</a></li>
             </ul>
         </nav>
-        <button class="button">Connect</button> <!-- Connect button -->
+        <button class="connect-button">Connect</button> <!-- Connect button -->
     </header>
     <div class="container-wrapper">
         <div class="container">
