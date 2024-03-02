@@ -24,7 +24,8 @@
         }
 
         h1 {
-            font-size: 32px;
+            font-size: 24px;
+            margin-bottom: 10px;
         }
 
         nav ul {
@@ -35,7 +36,7 @@
 
         nav ul li {
             display: inline;
-            margin-right: 20px;
+            margin-right: 10px;
         }
 
         nav ul li a {
@@ -51,9 +52,21 @@
             max-width: 150px; /* Adjust the max-width as needed */
         }
 
+        .text-container {
+            border: 2px solid transparent;
+            border-image: linear-gradient(to right, blue, purple);
+            border-image-slice: 1;
+            padding: 20px;
+            margin-top: 20px;
+            max-width: 80%;
+            margin: 0 auto;
+        }
+
         .container-wrapper {
             display: flex;
-            justify-content: space-around;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
             margin-top: 20px;
         }
 
@@ -62,7 +75,9 @@
             border-image: linear-gradient(to right, blue, purple);
             border-image-slice: 1;
             padding: 20px;
-            max-width: 200px;
+            margin-top: 20px;
+            max-width: 80%;
+            margin: 0 auto;
         }
 
         .container p {
@@ -71,32 +86,49 @@
 
         .buttons {
             display: flex;
-            justify-content: space-around;
+            flex-wrap: wrap;
+            justify-content: center;
             margin-top: 20px;
         }
 
         .button {
             background-image: linear-gradient(to right, blue, purple);
-            color: white; /* Text color */
+            color: white;
             padding: 10px 20px;
             border: none;
             border-radius: 5px;
             cursor: pointer;
             transition: background-color 0.3s;
+            margin: 10px;
         }
 
         .button:hover {
             background-color: purple;
         }
 
-        .text-container {
-            border: 2px solid transparent;
-            border-image: linear-gradient(to right, blue, purple);
-            border-image-slice: 1;
-            padding: 20px;
-            margin-top: 20px;
-            max-width: 400px;
-            margin: 0 auto;
+        /* Media Query for Mobile Devices */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 20px;
+            }
+
+            nav ul li {
+                margin-right: 5px;
+            }
+
+            .logo-container img {
+                max-width: 120px;
+            }
+
+            .text-container,
+            .container {
+                padding: 10px;
+            }
+
+            .button {
+                padding: 8px 16px;
+                font-size: 14px;
+            }
         }
     </style>
 </head>
