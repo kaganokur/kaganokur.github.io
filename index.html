@@ -11,26 +11,15 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            text-align: center; /* Center align text content */
+            text-align: center;
         }
 
         header {
-            position: relative; /* Make the header relative */
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
             padding: 20px; /* Add padding to the header */
         }
 
-        h1 {
-            display: none; /* Hide the title */
-        }
-
         .logo-container {
-            position: absolute; /* Position the logo absolutely */
-            top: 20px; /* Adjust top margin */
-            left: 50%; /* Center the logo horizontally */
-            transform: translateX(-50%); /* Move the logo back by half its width */
+            margin-bottom: 20px; /* Add vertical spacing below the logo */
         }
 
         .logo-container img {
@@ -39,15 +28,13 @@
         }
 
         nav {
-            flex: 1; /* Expand to fill available space */
-            text-align: center; /* Center align the nav */
+            margin-bottom: 20px; /* Add vertical spacing below the navigation */
         }
 
         nav ul {
             list-style-type: none;
             margin: 0;
             padding: 0;
-            display: inline-block; /* Make the ul inline-block for centering */
         }
 
         nav ul li {
@@ -67,27 +54,10 @@
             padding: 20px;
             margin: 20px auto; /* Center the box horizontally */
             max-width: 600px; /* Limit maximum width */
-            margin-bottom: 30px; /* Add vertical spacing */
         }
 
         .container p {
             margin: 0 auto; /* Center the text horizontally */
-        }
-
-        .container a {
-            color: white;
-            text-decoration: underline;
-            cursor: pointer;
-        }
-
-        .image-section {
-            margin-top: 20px;
-            text-align: center;
-        }
-
-        footer {
-            text-align: center;
-            margin-top: 20px;
         }
 
         .connect-button {
@@ -112,6 +82,9 @@
 </head>
 <body>
     <header>
+        <div class="logo-container">
+            <img src="images/bblogorb.png" alt="BlueBerry Logo">
+        </div>
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li> <!-- Updated Home link -->
@@ -120,25 +93,22 @@
                 <li><a href="/lock.html">Lock</a></li> <!-- Added Lock link -->
             </ul>
         </nav>
-        <div class="logo-container">
-            <img src="images/bblogorb.png" alt="BlueBerry Logo">
-        </div>
         <button class="connect-button">Connect</button> <!-- Connect button -->
     </header>
-    <section class="container">
+    <div class="container">
         <div class="content">
             <p>BlueBerry tokens are backed 1:1 with real world BlueBerries.</p>
             <p><a href="images/bbreserves.jpg" target="_blank">Proof of Reserves</a></p>
         </div>
-    </section>
+    </div>
     <!-- Add Roadmap text here -->
-    <section class="container">
+    <div class="container">
         <p>Roadmap: wtf is dat =)</p>
-    </section>
-    <section class="image-section">
+    </div>
+    <div class="container">
         <!-- Add your image here -->
         <img src="images/bbarmy.jpg" alt="Example Image" style="max-width: 100%; height: auto;">
-    </section>
+    </div>
     <footer>
         <p>Built by the team behind BlueBerry</p>
     </footer>
