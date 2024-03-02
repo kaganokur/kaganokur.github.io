@@ -15,20 +15,26 @@
         }
 
         header {
+            position: relative; /* Make the header relative */
             display: flex;
             justify-content: space-between;
             align-items: center;
-            margin-top: 20px;
-            padding: 0 20px; /* Add padding to the header */
-            position: relative; /* Set position to relative for absolute positioning */
+            padding: 20px; /* Add padding to the header */
         }
 
         h1 {
-            font-size: 32px;
-            background-image: linear-gradient(to right, blue, purple); /* Blue-purple gradient */
-            -webkit-background-clip: text; /* Apply the gradient as text color */
-            background-clip: text; /* Apply the gradient as text color */
-            color: transparent; /* Make text transparent */
+            display: none; /* Hide the title */
+        }
+
+        .logo-container {
+            position: absolute; /* Position the logo absolutely */
+            top: 10px; /* Adjust top margin */
+            left: 10px; /* Adjust left margin */
+        }
+
+        .logo-container img {
+            width: 150px; /* Adjust the width as needed */
+            height: auto; /* Maintain aspect ratio */
         }
 
         nav ul {
@@ -47,25 +53,12 @@
             text-decoration: none;
         }
 
-        .logo-container {
-            margin-top: 20px;
-            margin-left: 20px; /* Adjust left margin */
-            position: absolute; /* Position the logo absolutely */
-            top: 0;
-            left: 0;
-        }
-
-        .logo-container img {
-            width: 200px; /* Increase logo size */
-            height: auto; /* Maintain aspect ratio */
-        }
-
         .container {
             border: 2px solid transparent;
             border-image: linear-gradient(to right, blue, purple);
             border-image-slice: 1;
             padding: 20px;
-            margin: 60px auto 20px; /* Add vertical spacing between menu and containers */
+            margin: 20px auto; /* Center the box horizontally */
             max-width: 600px; /* Limit maximum width */
         }
 
@@ -101,12 +94,6 @@
 
         .connect-button:hover {
             background-color: purple;
-        }
-
-        @media screen and (max-width: 600px) {
-            .logo-container img {
-                width: 150px; /* Adjust logo size for smaller screens */
-            }
         }
     </style>
     <!-- Add your favicon link here -->
