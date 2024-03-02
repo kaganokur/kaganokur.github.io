@@ -11,12 +11,12 @@
             background-color: black;
             margin: 0;
             padding: 0;
+            color: white;
+            font-family: Arial, sans-serif;
             display: flex;
             flex-direction: column;
             align-items: center;
             height: 100vh;
-            color: white;
-            font-family: Arial, sans-serif;
         }
 
         header {
@@ -27,7 +27,7 @@
         }
 
         h1 {
-            font-size: 32px;
+            font-size: 24px;
         }
 
         nav ul {
@@ -38,7 +38,7 @@
 
         nav ul li {
             display: inline;
-            margin-right: 20px;
+            margin-right: 10px;
         }
 
         nav ul li a {
@@ -51,7 +51,8 @@
         }
 
         .logo-container img {
-            max-width: 150px; /* Adjust the max-width as needed */
+            max-width: 100%;
+            height: auto;
         }
 
         /* Style for buttons */
@@ -67,6 +68,26 @@
 
         .button:hover {
             background-color: purple;
+        }
+
+        /* Media Query for Mobile Devices */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 20px;
+            }
+
+            nav ul li {
+                margin-right: 5px;
+            }
+
+            .logo-container {
+                margin-top: 10px;
+            }
+
+            .button {
+                padding: 8px 16px;
+                font-size: 14px;
+            }
         }
     </style>
 </head>
@@ -88,7 +109,7 @@
     </header>
     <div>
         <!-- Your play page content goes here -->
-        <img src="images/bbjackpot.png" alt="BlueBerry Jackpot">
+        <img src="images/bbjackpot.png" alt="BlueBerry Jackpot" style="max-width: 100%; height: auto;">
     </div>
 </body>
 </html>
