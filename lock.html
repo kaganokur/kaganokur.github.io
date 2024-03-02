@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BlueBerry - Lock</title>
+    <!-- Use the correct favicon for this page -->
+    <link rel="icon" type="image/png" href="9q8Y3lBS.ico">
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        header {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 20px;
+        }
+
+        h1 {
+            font-size: 32px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .logo-container {
+            margin-top: 20px;
+        }
+
+        .logo-container img {
+            max-width: 150px; /* Adjust the max-width as needed */
+        }
+
+        .container-wrapper {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 20px;
+        }
+
+        .container {
+            border: 2px solid transparent;
+            border-image: linear-gradient(to right, blue, purple);
+            border-image-slice: 1;
+            padding: 20px;
+            max-width: 200px;
+        }
+
+        .container p {
+            margin: 10px 0;
+        }
+
+        .buttons {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 20px;
+        }
+
+        .button {
+            background-image: linear-gradient(to right, blue, purple);
+            color: white; /* Text color */
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .button:hover {
+            background-color: purple;
+        }
+
+        .text-container {
+            border: 2px solid transparent;
+            border-image: linear-gradient(to right, blue, purple);
+            border-image-slice: 1;
+            padding: 20px;
+            margin-top: 20px;
+            max-width: 400px;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>BlueBerry</h1>
+        <nav>
+            <ul>
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/play.html">Play</a></li>
+                <li><a href="/dashboard.html">Dashboard</a></li>
+                <li><a href="/lock.html">Lock</a></li> <!-- Added Lock page link -->
+            </ul>
+        </nav>
+        <div class="logo-container">
+            <img src="images/bblogo1.png" alt="BlueBerry Logo">
+        </div>
+    </header>
+    <div class="text-container">
+        <p>Lock BB for 1 year receive 0.25 xBB</p>
+        <p>Lock BB for 2 years receive 0.5 xBB</p>
+        <p>Lock BB for 3 years receive 0.75 xBB</p>
+        <p>Lock BB for 4 years receive 1 xBB</p>
+    </div>
+    <div class="container-wrapper">
+        <div class="container">
+            <h2>Lock BB</h2>
+            <p>Your BB balance</p>
+            <p>100 BB</p>
+            <div class="buttons">
+                <button class="button">Lock for 1 year</button>
+                <button class="button">Lock for 2 years</button>
+                <button class="button">Lock for 3 years</button>
+                <button class="button">Lock for 4 years</button>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>Built by the team behind BlueBerry</p>
+    </footer>
+</body>
+</html>
