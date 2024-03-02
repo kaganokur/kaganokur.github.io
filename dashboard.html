@@ -13,15 +13,19 @@
             margin: 0;
             padding: 0;
             text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
 
         header {
-            position: relative; /* Make the header relative */
+            width: 100%;
+            position: relative;
             display: flex;
-            justify-content: space-between;
+            justify-content: center;
             align-items: center;
             margin-top: 20px;
-            padding: 0 20px; /* Added padding for spacing */
+            padding: 20px 0; /* Added padding for spacing */
         }
 
         h1 {
@@ -29,23 +33,29 @@
         }
 
         .logo-container {
-            position: absolute; /* Position the logo absolutely */
+            position: absolute;
             top: 10px; /* Adjust top margin */
-            left: 10px; /* Adjust left margin */
         }
 
         .logo-container img {
             max-width: 150px; /* Adjust the max-width as needed */
         }
 
+        nav {
+            flex: 1;
+            text-align: center;
+        }
+
         nav ul {
             list-style-type: none;
             margin: 0;
             padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
 
         nav ul li {
-            display: inline;
             margin-right: 20px;
         }
 
@@ -110,7 +120,7 @@
             padding: 10px 20px;
             cursor: pointer;
             transition: background-color 0.3s;
-            position: absolute; /* Position the connect button absolutely */
+            position: absolute;
             top: 10px; /* Adjust top position */
             right: 10px; /* Adjust right position */
         }
@@ -133,8 +143,8 @@
                 <li><a href="/lock.html">Lock</a></li>
             </ul>
         </nav>
-        <button class="connect-button">Connect</button> <!-- Connect button -->
     </header>
+    <button class="connect-button">Connect</button> <!-- Connect button -->
     <div class="container-wrapper">
         <div class="container">
             <h2>BB-FTM LP</h2>
