@@ -32,8 +32,8 @@
         }
 
         nav ul li {
-            display: inline;
-            margin-right: 20px;
+            display: block; /* Change to block for mobile */
+            margin-bottom: 10px; /* Add margin for spacing */
         }
 
         nav ul li a {
@@ -51,7 +51,8 @@
 
         .container-wrapper {
             display: flex;
-            justify-content: space-around;
+            flex-direction: column; /* Change to column for mobile */
+            align-items: center; /* Center align items */
             margin-top: 20px;
         }
 
@@ -60,7 +61,8 @@
             border-image: linear-gradient(to right, blue, purple);
             border-image-slice: 1;
             padding: 20px;
-            max-width: 200px;
+            max-width: 80%; /* Adjust container width for mobile */
+            margin-bottom: 20px; /* Add margin for spacing */
         }
 
         .container p {
@@ -101,7 +103,6 @@
                 <li><a href="#home">Home</a></li>
                 <li><a href="/play.html">Play</a></li>
                 <li><a href="/dashboard.html">Dashboard</a></li>
-                <li><a href="/lock.html">Lock</a></li> <!-- Added Lock menu item -->
             </ul>
         </nav>
         <div class="logo-container">
@@ -140,4 +141,3 @@
     </footer>
 </body>
 </html>
-
