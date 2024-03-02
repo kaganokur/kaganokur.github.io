@@ -18,9 +18,10 @@
 
         header {
             display: flex;
-            flex-direction: column;
+            justify-content: space-between;
             align-items: center;
             margin-top: 20px;
+            padding: 0 20px; /* Added padding for spacing */
         }
 
         h1 {
@@ -105,6 +106,11 @@
             background-color: purple;
         }
 
+        footer {
+            text-align: center;
+            margin-top: 20px;
+        }
+
         /* Media Query for Mobile Devices */
         @media (max-width: 768px) {
             h1 {
@@ -144,6 +150,7 @@
                 <li><a href="/lock.html">Lock</a></li> <!-- Added Lock page link -->
             </ul>
         </nav>
+        <button class="button">Connect</button> <!-- Connect button -->
     </header>
     <div class="text-container">
         <p>Lock BB for 1 year receive 0.25 xBB</p>
