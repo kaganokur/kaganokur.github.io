@@ -3,186 +3,135 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>OSCORP Projects</title>
+    <title>BlueBerry - Dashboard</title>
     <style>
         body {
+            background-color: black;
+            color: white;
+            font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            font-family: Arial, sans-serif;
-            background-color: #000000;
-            color: #ffffff;
+            text-align: center;
+        }
+
+        header {
             display: flex;
             flex-direction: column;
-            min-height: 100vh;
-        }
-        
-        #menu {
-            display: flex;
-            justify-content: space-between;
             align-items: center;
-            background-color: #000000;
-            padding: 10px 20px;
+            margin-top: 20px;
         }
 
-        #menu a {
-            color: #ffffff;
-            text-decoration: none;
-            padding: 10px 20px;
-            transition: color 0.3s;
+        h1 {
+            font-size: 32px;
         }
 
-        #menu a:hover {
-            color: transparent;
-            background-image: linear-gradient(to right, #00ff00, #00ffff);
-            -webkit-background-clip: text;
-            background-clip: text;
-        }
-
-        #logo img {
-            max-width: 100%;
-            height: auto;
-            margin-left: 20px; /* Add margin to the left for spacing */
-        }
-
-        .project-section {
-            display: flex;
-            margin: 20px;
-        }
-
-        .project-section img {
-            max-width: 200px;
-            height: 150px;
-            margin-right: 20px; /* Add margin to the right for spacing */
-        }
-
-        .project-section-content {
-            flex: 1;
-        }
-
-        /* Footer styles */
-        #footer {
-            text-align: center;
-            background-color: #000000;
-            padding: 10px 0;
-            margin-top: auto;
-            color: #ffffff;
-        }
-
-        #footer p {
+        nav ul {
+            list-style-type: none;
             margin: 0;
+            padding: 0;
         }
 
-        /* Mobile responsiveness */
-        @media only screen and (max-width: 600px) {
-            #menu {
-                flex-direction: column;
-                align-items: center;
-            }
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
 
-            #menu-links {
-                margin-top: 20px;
-            }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
 
-            #menu a {
-                display: block;
-                margin-bottom: 10px;
-            }
+        .logo-container {
+            margin-top: 20px;
+        }
 
-            #logo img {
-                margin: 0; /* Reset margin for logo */
-            }
+        .container-wrapper {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 20px;
+        }
 
-            .project-section {
-                flex-direction: column;
-            }
+        .container {
+            border: 2px solid transparent;
+            border-image: linear-gradient(to right, blue, purple);
+            border-image-slice: 1;
+            padding: 20px;
+            max-width: 200px;
+        }
 
-            .project-section img {
-                max-width: 100%;
-                margin: 0 auto 20px; /* Center image and add spacing below */
-            }
+        .container p {
+            margin: 10px 0;
+        }
 
-            .project-section-content {
-                text-align: center;
-            }
+        .buttons {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 20px;
+        }
+
+        .button {
+            background-image: linear-gradient(to right, blue, purple);
+            color: white; /* Text color */
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .button:hover {
+            background-color: purple;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 20px;
         }
     </style>
 </head>
 <body>
-    <div id="menu">
-        <div id="logo">
-            <img src="images/oscorp.png" alt="OSCORP Logo">
+    <header>
+        <h1>BlueBerry</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="/play.html">Play</a></li>
+                <li><a href="/dashboard.html">Dashboard</a></li>
+            </ul>
+        </nav>
+        <div class="logo-container">
+            <img src="images/bblogo1.png" alt="BlueBerry Logo">
         </div>
-        <div id="menu-links">
-            <span>0xcontractaddress</span>
-            <a href="/">Home</a>
-            <a href="/team">Team</a>
-            <a href="/projects">Projects</a>
-            <a href="/investor-relations">Investor Relations</a>
+    </header>
+    <div class="container-wrapper">
+        <div class="container">
+            <h2>BB-FTM LP</h2>
+            <p>Your staked</p>
+            <p>21$FTM</p>
+            <div class="buttons">
+                <button class="button">Stake</button>
+                <button class="button">Withdraw</button>
+                <button class="button">Collect</button>
+            </div>
         </div>
-    </div>
-
-    <div class="project-section">
-        <img src="images/project1.webp" alt="Project 1 Image" width="200" height="150">
-        <div class="project-section-content">
-            <h2>Human Performance Enhancer</h2>
-            <p>As Dr. Stromm, Head of the Science Department at our multinational corporation, I am pleased to present groundbreaking research on human performance enhancers. Our team has developed cutting-edge compounds that target key physiological pathways to optimize human capabilities. Through meticulous experimentation and rigorous testing, we have identified formulations that enhance cognitive function, physical endurance, and overall well-being. Our approach prioritizes safety and efficacy, ensuring that these enhancers offer tangible benefits without compromising health. With further refinement and clinical validation, our innovations hold the potential to revolutionize various industries, from athletics to healthcare. We are committed to advancing human potential responsibly and ethically, shaping a future where individuals can achieve peak performance while maintaining optimal health and vitality.</p>
+        <div class="container">
+            <h2>xBB Staking</h2>
+            <p>Your staked xBB</p>
+            <div class="buttons">
+                <button class="button">Stake</button>
+                <button class="button">Withdraw</button>
+                <button class="button">Collect</button>
+            </div>
         </div>
-    </div>
-
-    <div class="project-section">
-        <img src="images/project2.webp" alt="Project 2 Image" width="200" height="150">
-        <div class="project-section-content">
-            <h2>Exoskeleton Suit</h2>
-            <p>As Norman Osborn, Founder and CEO of Oscorp, I am delighted to announce significant advancements in our development of the ExoSkeleton suit. This revolutionary technology represents a paradigm shift in enhancing human durability and strength. Our suit integrates state-of-the-art materials and biomechanical engineering to augment the user's physical capabilities while providing unprecedented protection and support.
-
-Through rigorous testing conducted by our team of experts, we have achieved remarkable results. The ExoSkeleton suit has demonstrated exceptional durability and strength enhancement, enabling users to perform tasks with greater efficiency and resilience. Furthermore, our tests have confirmed the suit's compatibility with various environments and activities, ensuring versatility and adaptability across a range of scenarios.
-
-As we move closer to the product launch phase, we remain committed to further refining the ExoSkeleton suit to meet the highest standards of performance, safety, and user experience. Our dedication to scientific innovation and technological advancement drives us to continue pushing the boundaries of possibility, shaping a future where individuals can unlock their full potential with the support of cutting-edge solutions like the ExoSkeleton suit. Stay tuned for more updates as we usher in a new era of human augmentation.</p>
-        </div>
-    </div>
-
-    <div class="project-section">
-        <img src="images/project3.webp" alt="Project 3 Image" width="200" height="150">
-        <div class="project-section-content">
-            <h2>Glider</h2>
-            <p>We are thrilled to unveil our latest achievement: the development of a groundbreaking glider capable of reaching speeds of up to 250 miles per hour. This remarkable feat is the culmination of years of collaborative effort, drawing on the expertise of numerous scientists and contributors within our organization.
-
-At the heart of this extraordinary glider is a revolutionary propulsion system harnessing the power of nuclear fusion. By leveraging the immense energy released through controlled fusion reactions, we have unlocked unprecedented levels of thrust and efficiency, propelling the glider to unparalleled speeds while minimizing environmental impact.
-
-The glider's sleek and aerodynamic design, reminiscent of a futuristic flying skateboard with a triangular shape, further optimizes its performance through enhanced maneuverability and stability. Advanced materials and composite structures ensure the glider's durability and structural integrity, allowing it to withstand the rigors of high-speed flight.
-
-With successful test flights demonstrating the glider's capabilities and safety, we are on the brink of introducing a transformative mode of transportation that promises to revolutionize air travel. From personal commuting to emergency response and beyond, this innovative glider opens up a world of possibilities, propelling us toward a future where mobility knows no bounds.
-
-As we continue to refine and enhance this groundbreaking technology, we remain committed to pushing the boundaries of scientific innovation, driving progress, and shaping a brighter tomorrow for generations to come. Stay tuned for more updates as we prepare to unleash the full potential of the Oscorp glider on the world stage.</p>
+        <div class="container">
+            <h2>Points</h2>
+            <p>Your claimable rewards</p>
+            <p>69 FTM</p>
+            <button class="button">Claim Rewards</button>
         </div>
     </div>
-
-    <div class="project-section">
-        <img src="images/project4.webp" alt="Project 4 Image" width="200" height="150">
-        <div class="project-section-content">
-            <h2>Nanobots</h2>
-            <p>As scientists at Oscorp, we are thrilled to share our latest breakthrough: the development of a revolutionary nanobot technology with limitless potential to transform healthcare and enhance human well-being. These nanobots represent a paradigm shift in medical science, offering unprecedented precision and effectiveness in targeting and eliminating harmful cells within the body.
-
-Through meticulous research and collaboration, our team has engineered nanobots equipped with advanced sensors and actuators, capable of precisely identifying and neutralizing a wide range of pathological cells and agents. Whether it's cancerous cells, infectious pathogens, or other harmful substances, these nanobots possess the intelligence and versatility to seek out and destroy them with unparalleled accuracy and efficiency.
-
-But the applications of this transformative technology extend far beyond disease treatment. Imagine a future where nanobots can repair damaged tissues, regenerate organs, and even deliver targeted therapies directly to affected areas within the body. With the potential to revolutionize diagnostics, treatment, and preventive care, the possibilities are truly endless.
-
-As we continue to refine and expand the capabilities of these nanobots, we are filled with excitement and hope for the future of medicine. From eradicating diseases to enhancing longevity and quality of life, this groundbreaking technology holds the promise of ushering in a new era of health and well-being for humanity.
-
-At Oscorp, we are committed to harnessing the power of science and innovation to address some of the most pressing challenges facing society today. With our nanobot technology, we are not just imagining a better future—we are actively working to make it a reality. Together, we can unlock the full potential of this remarkable technology and pave the way for a healthier, happier world for generations to come.</p>
-        </div>
-    </div>
-
-    <div class="project-section">
-        <img src="images/project5.webp" alt="Project 5 Image" width="200" height="150">
-        <div class="project-section-content">
-            <h2>Photogenesis</h2>
-            <p>Classified.</p>
-        </div>
-    </div>
-
-    <div id="footer">
-        <p>&copy; 2024 OSCORP. All rights reserved.</p>
-    </div>
+    <footer>
+        <p>Built by the team behind BlueBerry</p>
+    </footer>
 </body>
 </html>
