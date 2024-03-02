@@ -37,10 +37,16 @@
             height: auto; /* Maintain aspect ratio */
         }
 
+        nav {
+            flex: 1; /* Expand to fill available space */
+            text-align: center; /* Center align the nav */
+        }
+
         nav ul {
             list-style-type: none;
             margin: 0;
             padding: 0;
+            display: inline-block; /* Make the ul inline-block for centering */
         }
 
         nav ul li {
@@ -104,7 +110,6 @@
         <div class="logo-container">
             <img src="images/bblogorb.png" alt="BlueBerry Logo">
         </div>
-        <h1></h1> <!-- Removed BlueBerry title -->
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li> <!-- Updated Home link -->
@@ -117,7 +122,7 @@
     </header>
     <section class="container">
         <div class="content">
-            <p>BlueBerry tokens are backed 1:1 with real world BlueBerries.(Real)</p>
+            <p>BlueBerry tokens are backed 1:1 with real world BlueBerries.</p>
             <p><a href="images/bbreserves.jpg" target="_blank">Proof of Reserves</a></p>
         </div>
     </section>
