@@ -17,22 +17,32 @@
         }
 
         header {
-            position: relative;
             display: flex;
             justify-content: space-between;
             align-items: center;
-            margin-top: 20px;
-            padding: 0 20px; /* Added padding for spacing */
+            padding: 20px; /* Added padding for spacing */
+            position: relative;
         }
 
-        h1 {
-            display: none; /* Hide the title */
+        .logo-container {
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+        }
+
+        .logo-container img {
+            max-width: 150px; /* Adjust the max-width as needed */
         }
 
         nav ul {
             list-style-type: none;
             margin: 0;
             padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
 
         nav ul li {
@@ -45,12 +55,21 @@
             text-decoration: none;
         }
 
-        .logo-container {
-            margin-top: 20px;
+        .connect-button {
+            background-image: linear-gradient(to right, blue, purple);
+            color: white;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            position: absolute;
+            top: 20px; /* Adjust top position */
+            right: 20px; /* Adjust right position */
         }
 
-        .logo-container img {
-            max-width: 150px; /* Adjust the max-width as needed */
+        .connect-button:hover {
+            background-color: purple;
         }
 
         .text-container {
@@ -114,10 +133,6 @@
 
         /* Media Query for Mobile Devices */
         @media (max-width: 768px) {
-            h1 {
-                font-size: 20px;
-            }
-
             nav ul li {
                 margin-right: 5px;
             }
@@ -143,7 +158,7 @@
         <div class="logo-container">
             <img src="images/bblogorb.png" alt="BlueBerry Logo"> <!-- Keep the existing logo on top -->
         </div>
-        <button class="button">Connect</button> <!-- Connect button -->
+        <button class="connect-button">Connect</button> <!-- Connect button -->
         <nav>
             <ul>
                 <li><a href="/index.html">Home</a></li>
