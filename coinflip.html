@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coin Flip Game</title>
+    <style>
+        /* Add some basic styling */
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding-top: 50px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to the Coin Flip Game!</h1>
+    <p>Choose 'Heads' or 'Tails' and see if you win!</p>
+    
+    <button onclick="flipCoin('Heads')">Heads</button>
+    <button onclick="flipCoin('Tails')">Tails</button>
+    
+    <p id="result"></p>
+    
+    <script>
+        function flipCoin(userChoice) {
+            var resultDisplay = document.getElementById("result");
+            var choices = ['Heads', 'Tails'];
+            var randomIndex = Math.floor(Math.random() * choices.length);
+            var coinFlipResult = choices[randomIndex];
+            
+            if (userChoice === coinFlipResult) {
+                resultDisplay.textContent = "Congratulations! It's " + coinFlipResult + "! You win!";
+            } else {
+                resultDisplay.textContent = "Sorry! It's " + coinFlipResult + ". You lose!";
+            }
+        }
+    </script>
+</body>
+</html>
