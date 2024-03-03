@@ -8,17 +8,35 @@
         /* Add some basic styling */
         body {
             font-family: Arial, sans-serif;
-            text-align: center;
-            padding-top: 50px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
         }
 
         #coin {
-            width: 100px;
-            height: 100px;
-            background-color: gold;
-            border-radius: 50%;
+            width: 200px;
+            height: 200px;
             position: relative;
-            animation-duration: 1s;
+        }
+
+        .coin-face {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .heads {
+            background-image: url('images/fantom.png');
+        }
+
+        .tails {
+            background-image: url('images/btc.png');
         }
 
         @keyframes flip {
@@ -35,6 +53,7 @@
 
         .flipping {
             animation-name: flip;
+            animation-duration: 5s; /* Set animation duration to 5 seconds */
             animation-iteration-count: 1;
             animation-timing-function: ease-out;
         }
@@ -44,32 +63,35 @@
     <h1>Welcome to the Coin Flip Game!</h1>
     <p>Choose 'Heads' or 'Tails' and see if you win!</p>
     
-    <button onclick="flipCoin('Heads')">Heads</button>
-    <button onclick="flipCoin('Tails')">Tails</button>
+    <button onclick="flipCoin('heads')">Heads</button>
+    <button onclick="flipCoin('tails')">Tails</button>
     
     <p id="result"></p>
     
-    <div id="coin"></div>
+    <div id="coin">
+        <div class="coin-face heads"></div>
+        <div class="coin-face tails"></div>
+    </div>
     
     <script>
         function flipCoin(userChoice) {
             var resultDisplay = document.getElementById("result");
             var coin = document.getElementById("coin");
-            var choices = ['Heads', 'Tails'];
+            var choices = ['heads', 'tails'];
             var randomIndex = Math.floor(Math.random() * choices.length);
             var coinFlipResult = choices[randomIndex];
             
             coin.classList.add("flipping"); // Apply the flipping animation
             
             setTimeout(function() {
-                coin.classList.remove("flipping"); // Remove the flipping animation after 1 second
+                coin.classList.remove("flipping"); // Remove the flipping animation after 5 seconds
                 
                 if (userChoice === coinFlipResult) {
                     resultDisplay.textContent = "Congratulations! It's " + coinFlipResult + "! You win!";
                 } else {
                     resultDisplay.textContent = "Sorry! It's " + coinFlipResult + ". You lose!";
                 }
-            }, 1000); // Wait for 1 second for the animation to complete
+            }, 5000); // Wait for 5 seconds for the animation to complete
         }
     </script>
 </body>
