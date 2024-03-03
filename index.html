@@ -100,7 +100,7 @@
                 <li><a href="/lock.html">Lock</a></li> <!-- Added Lock link -->
             </ul>
         </nav>
-        <button class="connect-button">Connect</button> <!-- Connect button -->
+        <button class="connect-button" onclick="connectUser()">Connect</button> <!-- Connect button -->
     </header>
     <div class="container">
         <div class="content">
@@ -119,5 +119,12 @@
     <footer>
         <p>Built by the team behind BlueBerry</p>
     </footer>
+
+    <script>
+        function connectUser() {
+            // Add your connect logic here
+            alert('User connected successfully!');
+        }
+    </script>
 </body>
 </html>
