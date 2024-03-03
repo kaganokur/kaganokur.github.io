@@ -81,6 +81,11 @@
 
         .container p {
             margin: 10px 0;
+            color: white; /* Set default color to white */
+        }
+
+        .container p span {
+            color: blue; /* Set color of BB to blue */
         }
 
         .buttons {
@@ -167,8 +172,8 @@
         </ul>
     </nav>
     <div class="top-container container">
-        <p>Total Locked $BB : 780230</p>
-        <p>Total $xBB : 625789</p>
+        <p>Total Locked <span style="color: blue;">$BB</span> : 780230</p>
+        <p>Total <span style="color: blue;">$xBB</span> : 625789</p>
     </div>
     <div class="container-wrapper">
         <div class="container">
@@ -183,7 +188,7 @@
         </div>
         <div class="container">
             <h2>xBB Staking</h2>
-            <p>Your staked xBB</p>
+            <p>Your staked <span style="color: blue;">xBB</span></p>
             <div class="buttons">
                 <button class="button">Stake</button>
                 <button class="button">Withdraw</button>
