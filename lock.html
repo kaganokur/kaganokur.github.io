@@ -51,6 +51,14 @@
         nav ul li a {
             color: white;
             text-decoration: none;
+            transition: color 0.3s; /* Added transition for smooth color change */
+        }
+
+        nav ul li a:hover {
+            background-image: linear-gradient(to right, blue, purple);
+            background-clip: text;
+            -webkit-background-clip: text;
+            color: transparent;
         }
 
         .connect-button {
