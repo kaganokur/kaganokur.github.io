@@ -116,23 +116,6 @@
             background-clip: text;
             text-align: center; /* Center the text */
         }
-
-        /* Style for the spinner animation */
-        .spinner {
-            width: 100px;
-            height: 100px;
-            border-radius: 50%;
-            border: 5px solid transparent;
-            border-top-color: white;
-            animation: spin 1s linear infinite;
-            margin-top: 20px;
-        }
-
-        @keyframes spin {
-            to {
-                transform: rotate(360deg);
-            }
-        }
     </style>
 </head>
 <body>
@@ -153,18 +136,7 @@
     <div>
         <h2>COMING SOON</h2>
         <!-- Your play page content goes here -->
-        <div class="spinner"></div> <!-- Spinner animation -->
         <img src="images/bbjackpot.png" alt="BlueBerry Jackpot" style="max-width: 100%; height: auto;">
     </div>
-    <script>
-        // JavaScript to start spinning animation when the page loads
-        window.onload = function() {
-            var spinner = document.querySelector('.spinner');
-            spinner.style.display = 'none'; // Hide spinner initially
-            document.querySelector('img').onload = function() {
-                spinner.style.display = 'block'; // Show spinner when the image loads
-            };
-        };
-    </script>
 </body>
 </html>
