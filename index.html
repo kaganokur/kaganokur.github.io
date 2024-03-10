@@ -3,116 +3,66 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Stalios</title>
+    <title>My Simple Website</title>
+    <link rel="icon" href="images/deathlogofav.ico">
     <style>
         body {
-            background-color: black;
-            color: white;
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
+            background-color: #000;
+        }
+        header {
+            background-color: #000;
+            color: #fff;
+            padding: 20px 0;
             text-align: center;
         }
-
-        header {
-            padding: 20px; /* Add padding to the header */
-        }
-
-        .logo-container {
-            margin-bottom: 20px; /* Add vertical spacing below the logo */
-        }
-
-        .logo-container img {
-            width: 150px; /* Adjust the width as needed */
-            height: auto; /* Maintain aspect ratio */
-        }
-
         nav {
-            margin-bottom: 20px; /* Add vertical spacing below the navigation */
+            background-color: #f4f4f4;
+            padding: 10px 0;
+            text-align: center;
         }
-
-        nav ul {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-        }
-
-        nav ul li {
-            display: inline;
-            margin-right: 20px;
-        }
-
-        nav ul li a {
-            color: white;
+        nav a {
             text-decoration: none;
+            color: #333;
+            padding: 0 10px;
         }
-
-        nav ul li a:hover {
-            background-image: linear-gradient(to right, blue, purple);
-            background-clip: text;
-            -webkit-background-clip: text;
-            color: transparent;
+        nav a:hover {
+            color: #000;
         }
-
-        .connect-button {
-            background-image: linear-gradient(to right, blue, purple);
-            color: white;
-            border: none;
-            border-radius: 5px;
-            padding: 10px 20px;
-            cursor: pointer;
-            transition: background-color 0.3s;
+        section {
+            padding: 20px;
+            color: #fff;
+            text-align: center;
+        }
+        footer {
+            background-color: #000;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
             position: fixed;
-            top: 10px; /* Adjust top position */
-            right: 10px; /* Adjust right position */
-        }
-
-        .connect-button:hover {
-            background-color: purple;
+            bottom: 0;
+            width: 100%;
         }
     </style>
-    <!-- Add your favicon link here -->
-    <link rel="icon" type="image/png" href="staliosfav.ico">
 </head>
 <body>
     <header>
-        <div class="logo-container">
-            <!-- Update the image source to use images/stalioslogot.png -->
-            <img src="images/stalioslogot.png" alt="Stalios Logo">
-        </div>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li> <!-- Updated Home link -->
-                <li><a href="/play.html">Play</a></li>
-                <li><a href="/Stake.html">Stake</a></li>
-                <li><a href="/lock.html">Lock</a></li> <!-- Added Lock link -->
-                <li><a href="https://blueberry-1.gitbook.io/untitled/" target="_blank">Docs</a></li> <!-- Added Docs link -->
-            </ul>
-        </nav>
-        <button class="connect-button" onclick="connectUser()">Connect</button> <!-- Connect button -->
+        <img src="images/deathlogo.png" alt="Death Logo" style="max-width: 200px; margin: 0 auto;">
+        <p style="margin-top: 10px;">CA : 0X000000000000000000DEAD</p>
     </header>
-    <div class="container">
-        <div class="content">
-            <p>Welcome To Stalios</p>
-        </div>
-    </div>
-    <!-- Add Roadmap text here -->
-    <div class="container">
-        <p>0xstaliosca</p>
-    </div>
-    <div class="container">
-        <!-- Add your gif here -->
-        <img src="images/staliospizza.gif" alt="Stalios GIF" style="max-width: 100%; height: auto;">
-    </div>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+    </nav>
+    <section>
+        <h2>About Us</h2>
+        <p>This is a simple website created with HTML.</p>
+    </section>
     <footer>
-        <p>Built by the Stalios Team</p>
+        <p>Built by Death Team | Backed by ;)</p>
     </footer>
-
-    <script>
-        function connectUser() {
-            // Add your connect logic here
-            alert('User connected successfully!');
-        }
-    </script>
 </body>
 </html>
